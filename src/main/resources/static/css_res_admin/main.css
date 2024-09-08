@@ -1,0 +1,15 @@
+.newcll{    
+	font-weight: 600;
+    color: #002561;
+    margin-bottom: 3px;}
+
+.list_cls{    text-decoration: underline;
+    color: #046704;
+    font-weight: 800; cursor:pointer;
+	}
+	.bdr_cls{    border: 1px dotted #ccc;    margin: 10px 0px; }
+	.new_table{    border-spacing: 7px;     border-collapse: separate;}
+	#display_rooms{    padding-top: 5px;     border: 1px solid #4ecdc4;     border-radius: 5px;}
+	.new_p {margin-bottom:7px !important;}	
+	.mb-10 {     margin-bottom: 10px; 	}
+	.pd_lr20 { 		padding: 20px; }.pd_lr10 { 		padding: 10px; 	}

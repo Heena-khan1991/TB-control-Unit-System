@@ -1,0 +1,1579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 8.2.0.final using JasperReports Library version 6.20.3-415f9428cffdb6805c6f85bbb29ebaf18813a2ab  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="demo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ff1bfca6-7d24-4d6c-8cef-aef5333b97b0">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="referralDate" class="java.lang.String"/>
+	<field name="fileNo" class="java.lang.String"/>
+	<field name="tbcFileNo" class="java.lang.String"/>
+	<field name="nameEn" class="java.lang.String"/>
+	<field name="nameAr" class="java.lang.String"/>
+	<field name="idnumber" class="java.lang.String"/>
+	<field name="age" class="java.lang.String"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="sputumTestResult" class="java.lang.String"/>
+	<field name="cultureTestResult" class="java.lang.String"/>
+	<field name="medicalResistanceResult" class="java.lang.String"/>
+	<field name="dateOfadmission" class="java.lang.String"/>
+	<field name="symptomsStartDate" class="java.lang.String"/>
+	<field name="treatmentStartDate" class="java.lang.String"/>
+	<field name="contactFullNameEn" class="java.lang.String"/>
+	<field name="contactIdNumber" class="java.lang.String"/>
+	<field name="contactGender" class="java.lang.String"/>
+	<field name="contactFullNameAr" class="java.lang.String"/>
+	<field name="contactAge" class="java.lang.String"/>
+	<field name="contactNationalityEn" class="java.lang.String"/>
+	<field name="contactNationalityAr" class="java.lang.String"/>
+	<field name="contactOccupationEn" class="java.lang.String"/>
+	<field name="contactPhone" class="java.lang.String"/>
+	<field name="contactPlaceOfResidency" class="java.lang.String"/>
+	<field name="residencyStatus" class="java.lang.String"/>
+	<field name="contactresidencyStatusEn" class="java.lang.String"/>
+	<field name="contactresidencyStatusAr" class="java.lang.String"/>
+	<field name="comorbiditiesEn" class="java.lang.String"/>
+	<field name="comorbiditiesAr" class="java.lang.String"/>
+	<field name="relationToIndexCaseEn" class="java.lang.String"/>
+	<field name="relationToIndexCaseAr" class="java.lang.String"/>
+	<field name="referringClinicEn" class="java.lang.String"/>
+	<field name="referringClinicAr" class="java.lang.String"/>
+	<field name="riskFactorEn" class="java.lang.String"/>
+	<field name="riskFactorAr" class="java.lang.String"/>
+	<field name="comment" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="35">
+			<staticText>
+				<reportElement x="1" y="10" width="101" height="20" uuid="06b8d235-0719-42fb-b2fe-ab952f7ba46d"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ TB Control Unit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="10" width="203" height="20" uuid="bc2e9fa9-123f-4a73-b6d9-15b94d0d694b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact Referral Form]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="10" width="101" height="20" uuid="25f89685-5588-4633-b4ef-beb212e51cee"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[وحدة مكافحة الدرن ]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="738" splitType="Stretch">
+			<rectangle>
+				<reportElement x="2" y="44" width="551" height="220" uuid="68bfeadc-bfcd-4c13-84f5-7ed188bbe430">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="2" y="44" width="551" height="20" uuid="fdc2bac8-b240-4763-b8ff-6779a6d5575d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="2" y="64" width="551" height="20" uuid="8d133a22-75bc-4ff2-bd76-f96bf0ec9452"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="2" y="84" width="551" height="20" uuid="c48804fe-c025-4701-8078-ef7e26d4a2b7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="2" y="124" width="551" height="20" uuid="954ed461-f5ab-4b14-8677-8cf38de6498b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="2" y="164" width="551" height="20" uuid="c029bf47-110a-45a5-8c9a-134db6fca2ae"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="2" y="204" width="551" height="20" uuid="735caa5d-6faf-4044-a4eb-1b6f6cac2f88"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="2" y="224" width="551" height="20" uuid="ff4c0145-c03c-4d98-b65a-fe4e697b1990"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="64" width="70" height="17" uuid="cd96bbbd-84e8-4a7c-8e23-0d502e4fc4f1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[File No. (PRC)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="86" width="80" height="17" uuid="34f5be9f-e8b5-49a7-99c1-691f0190c390"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Patient Full Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="127" width="20" height="20" uuid="43747a47-7250-496a-bf4c-48d81ce787b7"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="145" width="130" height="18" uuid="0fb19446-dcf8-48c1-a948-ff73ef7f0acc"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sputum Smear Test Result]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="166" width="90" height="17" uuid="40a20706-1aae-4789-bcf5-fc089211f2d5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Culture Test Result]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="185" width="140" height="18" uuid="4e4da0f2-6692-493f-a1bf-eaa34e78894f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Medication Resistance Result ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="62" width="5" height="20" uuid="e2e60133-09cf-4919-8eee-abf308a5034d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="84" width="5" height="20" uuid="3dae18b1-5100-45b2-836f-dd5457e52571"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="104" width="5" height="20" uuid="4d0d056d-25f8-4c59-99a3-3f7f5d0a6b6f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="124" width="5" height="20" uuid="8be3ef4a-6652-4dd2-ae8d-c390d047a1b5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="144" width="5" height="20" uuid="4e377084-8d3b-4bcd-8c59-fe5acfa7a294"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="164" width="5" height="20" uuid="01675ac5-34f7-4b78-a7eb-8c2f7a1dedb0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="184" width="5" height="20" uuid="91a32583-8cd4-43d8-93e9-c5c468896c0a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="205" width="85" height="20" uuid="a505d6d0-e879-4c15-9e06-f217dee03dc6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date of Admission]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="204" width="5" height="20" uuid="8dba5215-ad9e-4dc9-b4cb-1d1e3f71eee2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="225" width="97" height="20" uuid="a917aeaa-39e1-4af8-ad32-81eee1dd0604"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Symptoms Start Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="105" y="224" width="5" height="20" uuid="12baeae8-8025-458b-a618-bbf4c52bb68c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="2" y="244" width="551" height="20" uuid="988e68d0-12ff-4fd8-aa36-391c2da7c382"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="7" y="245" width="97" height="20" uuid="2d36e9d6-cda6-4360-9237-155814a7b607"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Treatment Start Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="105" y="244" width="5" height="20" uuid="aaa76642-de26-44d8-9fdb-fe75d6ddbd50"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="285" width="551" height="399" uuid="261548de-1e3b-4285-9c1a-c48cf69ed4a2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="285" width="551" height="20" uuid="fc0cd3b3-6de1-4e02-a833-2f7eb35b3909"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="305" width="551" height="20" uuid="98ec9a3f-076e-4814-8c5a-43ed0bd1d44d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="325" width="551" height="20" uuid="d1cd3779-f3f4-467b-b209-f417aa6a4125"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="344" width="551" height="20" uuid="827f3b90-324d-4e58-9f3f-577f01669294"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="364" width="551" height="20" uuid="98229743-ef15-4a49-9db4-31e8974b5b95"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="384" width="551" height="20" uuid="7a0943e5-c9e3-4026-aeea-5a39ca21aa30"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="404" width="551" height="40" uuid="604da37a-a284-4f3a-a707-78709c754f5a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="484" width="551" height="40" uuid="eed32895-94c3-4771-bfb2-37f73752e7cb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="524" width="551" height="40" uuid="47509d59-5469-41ee-8ec6-242c0ad17901"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="7" y="306" width="102" height="18" uuid="fe3224a7-f9c6-4249-a02a-044e8066d27f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact Full Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="6" y="325" width="52" height="19" uuid="f7a3e707-31ba-4075-a6cb-1b5ec1662694"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Civil ID no.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="344" width="43" height="21" uuid="2bd2fb21-916b-4c3e-a4ce-847e0ac93247"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="305" width="5" height="20" uuid="616c9270-f37d-4432-9708-beece694171d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="364" width="33" height="19" uuid="df8d5102-51bd-40d1-ae1d-7aea46fe1109"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Phone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="384" width="92" height="18" uuid="cf653e14-a817-490f-8324-d8a1338eb4ff"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Place of Residency]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="413" width="84" height="20" uuid="f518826e-07ce-481c-94ea-9e2c72437094"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Residency Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="452" width="111" height="20" uuid="164ad033-6657-4d54-90c8-e17a01bdbd2c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relation to Index Case]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="63" y="325" width="5" height="20" uuid="b63b5bfe-178a-46e3-9c54-db812dcbc96b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="49" y="344" width="5" height="20" uuid="1ed02df4-ba04-4678-8e99-358b73ba125c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="364" width="5" height="20" uuid="6ef25a75-9f22-4f41-899d-268aee72f502"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="384" width="5" height="20" uuid="70569201-71fd-4cf0-a35b-867c96944daf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="97" y="413" width="5" height="20" uuid="cb77f400-d152-4c19-9627-9447b5be7f3f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="118" y="452" width="5" height="20" uuid="5f2bc81c-78bf-4133-8cb7-af723f448551"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="492" width="95" height="20" uuid="3f7ae768-da32-4609-bbed-247d0ab8a18c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Referring Clinic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="492" width="5" height="20" uuid="ba31049b-11ff-429d-bd72-c36cead37266"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="564" width="551" height="40" uuid="ab81034d-b2e8-40df-9f0c-5612cac2d8e8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="604" width="550" height="20" uuid="973aa069-e0da-4e23-b2c8-285b2fb5526c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="5" y="530" width="68" height="20" uuid="c55550b4-08c0-4e1e-8852-959e009c94a7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Comorbidities]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="78" y="531" width="5" height="20" uuid="824b0675-bcd9-477b-a536-c4bd2d61af70"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="572" width="83" height="20" uuid="0d4d4428-b9c5-4208-af1b-39fd3c550994"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Risk Factors]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="572" width="3" height="20" uuid="64a8707b-ee94-4db8-b5d8-ebeb6d744f05"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="624" width="551" height="20" uuid="d34c5909-14eb-4e14-a617-fa8cd74483fb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="644" width="551" height="20" uuid="812ca5bb-7b40-4027-85e3-309ac864f4eb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="664" width="551" height="20" uuid="38131e4f-f4d6-43aa-a693-e76400c77dc3">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="4" y="604" width="55" height="20" uuid="ec93bd8d-07e5-41b7-9367-da295f390bb4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TST / IGRA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="624" width="65" height="20" uuid="7e0f228e-bdea-4ed9-9e4a-e9af7d4fd443"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TST Reading]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="604" width="5" height="20" uuid="dc044465-35c8-4791-9999-302f9a1baa3a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="624" width="5" height="20" uuid="52d041cd-d76b-4442-aa6f-3ffdd8d94f32"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="643" width="87" height="20" uuid="53afa184-0777-40c7-8300-d234807daa9e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Chest X-ray Result]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="89" y="644" width="5" height="20" uuid="fb591e0f-8d12-4fce-b397-6abb68ab5bce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="665" width="47" height="18" uuid="bbadea8d-f494-4613-aa1d-73ff03aea4e7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Test Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="53" y="664" width="5" height="20" uuid="ee657820-98dc-4f2e-a88a-099c119bae3f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="701" width="30" height="17" uuid="31299b79-a149-40ee-93ed-2adb6d91a3f0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Notes:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="708" width="523" height="30" uuid="b29e5ac3-c2ec-4a5e-be55-6b1ae8f6e44b"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.................................................................................................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="624" width="30" height="20" uuid="373c5bb9-67dc-436c-b342-f081e303e286"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[mm]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="67" y="609" width="10" height="10" uuid="01414b8e-f89d-4305-a068-2698ff821c53">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="80" y="604" width="39" height="20" uuid="92e512e2-100d-48b4-be0b-89fa33299d36">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Positive]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="130" y="609" width="10" height="10" uuid="42cf2026-0c8f-4553-9486-04ceebe56a19">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="144" y="604" width="46" height="20" uuid="19fa167c-5866-46f1-bbc5-4e954c49cba9">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Negative]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="62" y="349" width="10" height="10" uuid="a18335fe-ba29-421d-88fe-55dd2959262a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="78" y="345" width="26" height="19" uuid="a21452d1-6a63-4a19-8cc2-a2335ec7a96f">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Male]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="115" y="349" width="10" height="10" uuid="f677f474-cde3-4f34-875c-73aa5ad42593">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="135" y="344" width="29" height="18" uuid="33e5ca6e-f697-4eba-864c-c8783b8760e4">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Female]]></text>
+			</staticText>
+			<line>
+				<reportElement x="299" y="344" width="1" height="61" uuid="df598e8d-2be9-4983-b7a1-0dccb58066f6"/>
+			</line>
+			<staticText>
+				<reportElement x="302" y="344" width="24" height="18" uuid="6436dc2f-a08c-40bf-be5b-331505172da1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="302" y="364" width="52" height="20" uuid="9659081b-039d-468a-89db-0bf416024763"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nationality]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="383" width="61" height="20" uuid="d70537dc-c0e3-432e-86b5-4e1b1b29182a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Occupation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="326" y="344" width="5" height="20" uuid="7bce7818-9d6c-4f8b-999f-49c9c34afd78"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="364" width="5" height="20" uuid="6b524afe-e2c2-498e-8b9d-eb53bb567f58"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="364" y="384" width="5" height="20" uuid="418848d3-4b27-4c0b-8fae-2dfbcca42584"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="235" y="124" width="1" height="21" uuid="e2df1283-b1cb-44e4-8216-4837c9d32832"/>
+			</line>
+			<staticText>
+				<reportElement x="239" y="123" width="41" height="22" uuid="bdcbb2aa-2803-49ea-9b27-df49280911fd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="275" y="124" width="5" height="20" uuid="1fe8597e-9012-49dc-8a1a-b40bae0eb833"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="284" y="129" width="10" height="10" uuid="adc9b375-4ebe-4094-920c-8f3a207f2128">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$F{gender}.equals( "M")]]></printWhenExpression>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="302" y="124" width="26" height="21" uuid="daa1ffd8-cf91-4977-a084-a268ea2f5b50">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Male]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="332" y="129" width="10" height="10" uuid="5a00aa77-f04a-43de-8a25-0d29c31eb9a8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$F{gender}.equals( "F")]]></printWhenExpression>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="350" y="125" width="29" height="18" uuid="827cef6d-535a-4a34-916a-c8491cc0d575">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Female]]></text>
+			</staticText>
+			<line>
+				<reportElement x="284" y="62" width="1" height="21" uuid="7571cfcd-2c9b-4b93-8275-83e1bc1e7904"/>
+			</line>
+			<staticText>
+				<reportElement x="2" y="4" width="102" height="20" uuid="691896a0-20c8-4b8f-9d31-7081dac3491b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="85" y="64" width="55" height="20" uuid="d0eee64c-8ccb-4004-ba5a-380fea29b004"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fileNo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="100" y="87" width="71" height="16" uuid="3cf40f0e-61b6-457d-99a5-26334db8905c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nameEn}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="74" y="107" width="111" height="16" uuid="677a8270-4daa-4d70-b676-81d1c2c6df42"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idnumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="50" y="127" width="60" height="14" uuid="1f28069c-4241-4f16-b0d9-74db330a617e"/>
+				<textElement>
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="156" y="145" width="138" height="18" uuid="ac1e2915-1bc3-4fcf-b276-0dc9ecf3f5ac"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sputumTestResult}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="126" y="166" width="153" height="17" uuid="198b74b0-bd8d-41a0-88f7-6e8c89746806"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cultureTestResult}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="137" y="205" width="130" height="20" uuid="aacd8189-f714-45ee-acae-e7093540ab50"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dateOfadmission}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="127" y="225" width="142" height="20" uuid="84e66190-0cf5-4ba9-8d22-8fccefcc4d34"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{symptomsStartDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="126" y="245" width="158" height="20" uuid="d0e1ee64-6642-4c09-8d78-b7361e3067ae"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{treatmentStartDate}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="281" y="127" width="17" height="14" uuid="a403a88c-e286-47f8-bfce-f0f2e5631c14">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<printWhenExpression><![CDATA[$F{gender}.equals( "M")]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<imageExpression><![CDATA["Image\\tick_pm.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="329" y="127" width="17" height="14" uuid="fbb89ec2-aa9d-4575-935a-f7a36c773bf2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<printWhenExpression><![CDATA[$F{gender}.equals( "F")]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<imageExpression><![CDATA["Image\\tick_pm.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="360" y="84" width="71" height="20" uuid="2d01dab2-c307-44d8-af37-0e7f9975c06a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nameAr}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="290" y="66" width="70" height="17" uuid="2c8763ab-b62e-45a2-9f8b-f0fe01bbb589"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TBC File No. :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="356" y="64" width="64" height="20" uuid="d2240f41-0187-4b0c-bc79-4212132b7a93"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tbcFileNo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="156" y="185" width="172" height="18" uuid="915a4028-f8e9-4cad-99af-073c306657de"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{medicalResistanceResult}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="132" y="45" width="132" height="18" uuid="48ab243f-1272-4f2b-9cd9-14afe40377bd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(Index Case Info.)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="136" y="286" width="132" height="19" uuid="c9a4d399-cecd-4f0e-b7e2-0ae067092f5b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(Contact Info.)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="106" width="50" height="17" uuid="c1195026-e6ae-4c3f-9868-6e884bb38006"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Civil ID No.]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="118" y="307" width="160" height="17" uuid="5c045a50-dbfe-4dcb-b326-d4638614750e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contactFullNameEn}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="119" y="325" width="140" height="19" uuid="f19363de-fbe0-4d6b-987a-ca48a62e2615"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contactIdNumber}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="59" y="347" width="17" height="14" uuid="9e52b6c8-0c5f-4de5-b4b3-98c81980e932">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<printWhenExpression><![CDATA[$F{contactGender}.equals( "M")]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<imageExpression><![CDATA["Image\\tick_pm.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="112" y="348" width="17" height="14" uuid="e02c627a-1c8d-43ea-a712-44b5644ee0eb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<printWhenExpression><![CDATA[$F{contactGender}.equals( "F")]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<imageExpression><![CDATA["Image\\tick_pm.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="293" y="304" width="160" height="22" uuid="82221c62-0738-4c4f-8bca-e05384eb9b75">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contactFullNameAr}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="340" y="344" width="130" height="20" uuid="875cca7f-e939-4b17-9e7c-f2f837829738"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contactAge}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="363" y="365" width="133" height="19" uuid="40233a9b-590f-49b0-a934-75d7a67f596f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contactNationalityEn}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="373" y="384" width="126" height="19" uuid="133c753a-f7b6-4e57-99b2-ee990abfb114"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contactOccupationEn}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="53" y="364" width="130" height="20" uuid="a48e4fbb-2db6-4b4d-b15b-ff9029930366"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contactPhone}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="112" y="384" width="126" height="19" uuid="b0348fd3-82a6-42e3-a04b-e3a3b58c11de"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contactresidencyStatusEn}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="105" y="413" width="178" height="20" uuid="6321a5ba-a6eb-4481-a2eb-81612becde4d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contactresidencyStatusEn}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="109" y="492" width="161" height="20" uuid="4c4e774b-bfc0-472f-bd8b-cade73f9c50d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{referringClinicEn}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="288" y="492" width="171" height="20" uuid="094dddda-497f-425e-b939-d6d0e8fb29ef">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{referringClinicAr}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="310" y="413" width="178" height="20" uuid="50b458e6-cf34-4ed5-9bc1-03e5f7707c33"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contactresidencyStatusAr}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="37" y="4" width="100" height="20" uuid="77015391-ac21-4142-af53-c4d1abec3ad0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{referralDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="430" y="4" width="85" height="20" uuid="9bf83bad-d163-4933-bb50-8f9372fea238"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{referralDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="517" y="4" width="36" height="20" uuid="43cb0bff-9b2f-45eb-a330-8f4ffa62bed9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[التاريخ :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="37" y="700" width="161" height="18" uuid="946d8201-6f55-4a5a-ad6e-c3701515b062"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comment}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="102" y="572" width="161" height="20" uuid="595625b5-6cf2-4c62-9817-0839691412a9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{riskFactorEn}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="288" y="572" width="171" height="20" uuid="24182d1b-0cd1-47ef-84ce-0caa9e00d43b">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{riskFactorAr}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="125" y="452" width="178" height="20" uuid="305799c8-ac89-465a-92fd-8a031972b290"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{relationToIndexCaseEn}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="327" y="452" width="156" height="20" uuid="bb687293-e7bf-4e04-af89-3867e320172e"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{relationToIndexCaseAr}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="89" y="531" width="161" height="20" uuid="0d960dea-2d0f-41b6-90e7-fdb215225813"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comorbiditiesEn}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="288" y="531" width="171" height="20" uuid="bcce05b3-d097-4b33-873e-27dc0ad87119">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comorbiditiesAr}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="267" y="45" width="132" height="18" uuid="18b8b4cf-9d9c-4b30-b67d-8ebcc84bebf9">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[معلومات المريض]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="214" y="65" width="66" height="18" uuid="59a65fd1-4fd3-4cd5-8ac9-2fdabd60150d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[رقم الملف (PCR)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="209" y="64" width="5" height="20" uuid="206dbc77-0a6b-4bd8-be48-a1ace2c19aee"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="485" y="63" width="64" height="18" uuid="ee43cef4-4104-4f14-b6d8-42481a4d51ef">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[رقم الملف الداخلي]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="64" width="5" height="20" uuid="b1a65405-1888-4a8a-86fc-281b9746a066"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="485" y="85" width="64" height="18" uuid="2a9619db-017a-4ed0-8482-03cf0bd5a92b">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[معلومات المريض]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="84" width="5" height="20" uuid="8fdc32a2-054c-49b0-9076-6b5f0dfb5a01"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="491" y="105" width="58" height="18" uuid="e90bc945-75fb-49a4-bfc4-278dad907709">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[ الرقم المدني ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="103" width="5" height="20" uuid="796a0835-c701-4b86-a8af-b321d909143e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="509" y="125" width="40" height="18" uuid="4d9bece1-2f3c-4f60-ac43-be4c95288474">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[النوع]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="124" width="5" height="20" uuid="0964cb32-384f-471c-b869-50d10889623f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="485" y="145" width="64" height="18" uuid="4b13b39f-633e-4c10-a96f-c6ac8024b492">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[نتيجة فحص البصاق]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="144" width="5" height="20" uuid="a887bab8-f0ba-4b9e-bbd8-546fa3e72e72"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="485" y="165" width="64" height="18" uuid="93b9c14e-59df-4da9-bd06-036546300bc7">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[نتيجة فحص المزرعة]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="164" width="5" height="20" uuid="e387fd7f-9b92-4df8-aa0f-2e1a6668073e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="185" width="78" height="18" uuid="fa33ed43-ce10-4380-bb83-95ead280c32a">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[نتيجة مقاومة الادوية]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="465" y="184" width="5" height="20" uuid="72fb9fd8-941e-4876-b664-9415bc43f8de"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="485" y="205" width="64" height="18" uuid="843e35a4-cae9-49f3-9c0d-ca4cbce8930c">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[تاريخ الدخول]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="204" width="5" height="20" uuid="800d632e-f3ac-408e-beb7-b14962497b63"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="225" width="78" height="18" uuid="9958814a-59bc-44b7-ae39-bbaa8b698d81">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[تاريخ بداية الاعراض]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="465" y="224" width="5" height="20" uuid="fd6e5956-6173-475c-aaaf-8e13a6ad740e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="443" y="665" width="101" height="18" uuid="d1336dc9-83fe-4482-be70-466bf5e64b51"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[تاريخ الفحص]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="664" width="5" height="20" uuid="035eeb42-dbe6-4e09-b2bf-ccfee984c4e2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="245" width="78" height="18" uuid="b251c0dc-93ec-4116-bd41-e535c81705b3">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[تاريخ بداية العلاج]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="465" y="244" width="5" height="20" uuid="9346a761-5233-46f6-adc1-45ce3c4c31be"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="443" y="645" width="101" height="18" uuid="70b508b6-4ed6-49d5-9a8d-d945a19d1e44"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[نتيجة فحص أشعة الصدر]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="644" width="5" height="20" uuid="857b31bf-f7aa-4461-8ee0-447080e800d7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="443" y="625" width="101" height="18" uuid="2f6d1b83-42ad-4af1-be4a-75c2e5a98fde"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[قرائة التيوبركلين]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="624" width="5" height="20" uuid="a80a563e-dfa5-4211-b455-44bc2c8a3b0f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="443" y="605" width="101" height="18" uuid="e8d02b96-b9a2-497e-9f02-d07942cf6744"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[فحص التيوبركلين / IGRA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="604" width="5" height="20" uuid="2f135c01-cf73-4f02-b1c7-3be91d4631be"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="573" width="74" height="18" uuid="5aa8ab2e-7d36-419f-b872-b69c6acf81ce">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[عوامل الإختطار]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="462" y="572" width="5" height="20" uuid="586d0f0d-14a4-451e-8d6e-e6291d17f50f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="462" y="306" width="84" height="18" uuid="00bcc339-6f01-4cbd-9a6b-17ce0ef61f96">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[اسم المخالط (الكامل)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="457" y="305" width="5" height="20" uuid="e9167925-dcee-4656-bb2d-fb5e4dc7d517"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="477" y="532" width="67" height="18" uuid="15380cb9-1e45-479c-9e73-3210d7d76072">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[أمراض مصاحبة]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="465" y="530" width="5" height="20" uuid="970be697-d641-45bb-8d97-fdf79ffdbae1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="483" y="493" width="61" height="18" uuid="344992ca-2282-4f60-b4d3-8706758b6883">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[العيادة المحولة]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="465" y="492" width="5" height="20" uuid="cccb5110-993f-444c-9734-f72f384ff3a0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="491" y="453" width="53" height="18" uuid="df8a1105-a4e7-41c9-871f-f67032045f9d">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[درجة الإقامة]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="486" y="452" width="5" height="20" uuid="9e5d0c18-c685-4224-b33f-1c81ccc1b8a2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="491" y="413" width="53" height="18" uuid="672bde89-67b7-4329-ace5-0f935dde651e">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[حالة الإقامة]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="486" y="413" width="5" height="20" uuid="a3e7f7a1-dc29-4f88-bbad-79d178c75864"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="505" y="385" width="40" height="18" uuid="3e9522b1-dfe6-4b83-bf35-c82e9f1c59b0">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[الوظيفة]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="503" y="384" width="5" height="20" uuid="527adccc-6726-4578-a456-5a4a68c17a57"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="505" y="365" width="40" height="18" uuid="a534ffd9-3f87-4770-963f-fafa2074a36f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[الجنسية ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="503" y="364" width="5" height="20" uuid="df275ab6-cbbb-4ff3-9e4c-8639d9f0e84a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="513" y="346" width="32" height="18" uuid="a380f999-52d8-4738-bf5b-b55e52daa5ea"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[العمر ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="503" y="345" width="5" height="20" uuid="bcba6273-0882-4336-98d6-fb45052de25d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="462" y="326" width="84" height="18" uuid="4d15ceda-e823-4c4e-9335-ea99e84ad30b">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[ الرقم المدني ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="457" y="324" width="5" height="20" uuid="10ea617a-e390-4ec8-9902-9c0cde6fc9d4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="124" width="5" height="20" uuid="cbb03699-4fe9-4f72-b654-620bf4f2de0d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="191" y="125" width="40" height="18" uuid="a02face0-7381-4bb5-8649-eb4930f665c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[العمر ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="286" width="132" height="18" uuid="40d0a2d4-ef93-43c6-b142-a51419b4e29a">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[معلومات المخالط]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="257" y="346" width="40" height="18" uuid="5753a992-8393-499d-86f1-21cb5ced8446">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[النوع]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="251" y="345" width="5" height="20" uuid="8658e58c-232d-4328-b63e-e45e71f01bff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="257" y="365" width="40" height="18" uuid="d8dae8b6-9b3e-4b87-929b-50654cca9112"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[التلفون]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="251" y="364" width="5" height="20" uuid="c857097a-422c-4995-901c-db5abcff0fdd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="239" y="385" width="60" height="18" uuid="ce5a67e7-eba3-4aa5-b3ee-77a845478add"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[مكان السكن]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="384" width="5" height="20" uuid="c1256eb0-b41d-4867-bd4a-fba2396d2846"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="300" y="609" width="10" height="10" uuid="5a5938e7-45ad-41e0-9167-435dc49b5cce">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="313" y="608" width="29" height="13" uuid="226dee0b-009f-4cd8-a1d2-58a79f1584bd">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[إيجابي]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="363" y="609" width="10" height="10" uuid="6b0b14f0-6b85-4002-8da4-fccf95828a94">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="377" y="608" width="36" height="13" uuid="758a28f5-496f-4768-bc49-6ba62e7d37ae">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[سلبي]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="316" y="624" width="30" height="20" uuid="fa00e841-c027-49ea-b9ab-1654927d8845"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[مم]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="443" y="698" width="101" height="18" uuid="8415c19c-e3df-4b49-bbb6-c71f8b30edb6">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+					<paragraph rightIndent="3"/>
+				</textElement>
+				<text><![CDATA[الملاحظات]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="434" y="698" width="5" height="18" uuid="604b96e0-7faf-402d-9037-ff97303b8ca1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="267" y="698" width="161" height="20" uuid="7fba8277-0683-460e-9f50-31106c98a91b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comment}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
